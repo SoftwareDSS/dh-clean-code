@@ -5,6 +5,10 @@ const path = require( "path" );
 
 function inscribeUserToCourse( name, age, courseId ) {
 
+    if( !isValidCourse( courseId ) ) {
+        return;
+    }
+
     const user = createUserObject( name, age, courseId );
 
     const usersPath   = "./users_clean.json";
@@ -21,6 +25,15 @@ function inscribeUserToCourse( name, age, courseId ) {
     writeJsonFile( coursesPath, courses );
 
     console.log("User has been subscribed");
+
+}
+
+function isValidCourse( courseId ) {
+
+    if( courseId ==="FS101" || courseId === "FS102" )
+        return true;
+    else 
+        return false;
 
 }
 
