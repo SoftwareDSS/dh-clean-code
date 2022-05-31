@@ -1,0 +1,18 @@
+[
+    {
+        "CourseID": "FS101",
+        "CourseName": "FullStack NodeJs",
+        "CourseUsers": [
+            {
+                "userName": "max",
+                "userAge": 26,
+                "user_course": "FS101"
+            }
+        ]
+    },
+    {
+        "CourseID": "FS102",
+        "CourseName": "Fullstack Python",
+        "CourseUsers": []
+    }
+]
